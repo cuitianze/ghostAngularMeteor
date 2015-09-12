@@ -1,0 +1,37 @@
+<div id="blog">
+<div class="container">
+
+<form>
+  <div class="input-group-lg">
+    <input ng-model="blog.title" type="text" name="title" class="form-control" placeholder="Your Post Title">
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="contentHeader">
+        Markdown
+      </div>
+      <textarea ng-model="blog.article" class="form-control articleMarkdown" rows="20"></textarea><br />
+    </div>
+    <div class="col-md-6">
+      <div class="contentHeader">
+        Preview
+      </div>
+      <div marked="blog.article" class="articlePreview"></div>
+    </div>
+  </div>
+  <div class="contentFooter">
+    <span class="tag-tip">Tag</span>
+    <div class="col-md-12 tag-group">
+      <div class="input-group">
+        <div class="col-md-6" ng-repeat="tag in blog.tags">
+          <input type="text" name="tag" ng-model="tag.name" class="form-control tag-input">
+        </div>
+        <i class="glyphicon"></i>
+      </div>
+    </div>
+    <button type="button" name="submit" ng-click="submit(blog)" class="btn btn-success blog-submit">Submit</button>
+  </div>
+</form>
+
+</div>
+</div>

@@ -1,0 +1,35 @@
+<div class="blogs-list container">
+  <h1>Blogs</h1>
+  <form ng-submit="save()" name="form" novalidate="" class="thing-form">
+    <p class="input-group">
+      <input type="text" placeholder="Name" ng-model="newBlog.name" class="form-control"/><span class="input-group-btn">
+        <input type="submit" value="Add" class="btn btn-primary"/></span>
+    </p>
+  </form>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="blogs-list" ng-repeat="blog in blogs">
+          <h4><a ui-serf="blogDetail">{{blog.title}}</a></h4>
+      </div>
+      <!-- <div class="input-group pull-right col-md-3 col-sm-12">
+        <input type="search" ng-model="search" placeholder="Search" class="form-control"/>
+        <div dropdown="" on-toggle="toggled(open)" class="dropdown input-group-btn">
+          <button dropdown-toggle="" class="btn btn-primary dropdown-toggle">{{ orderProperty==='1' ? 'Ascending' : 'Descending' }}<span class="caret"></span></button>
+          <ul role="menu" class="dropdown-menu">
+            <li ng-click="orderProperty='1'">Ascending</li>
+            <li ng-click="orderProperty='-1'">Descending</li>
+          </ul>
+        </div>
+      </div>
+      <ul class="nav nav-tabs nav-stacked col-md-9 col-sm-12">
+        <li dir-paginate="blog in blogs | itemsPerPage: perPage" total-items="blogsCount.count" current-page='page'>
+          <p><a href="/blogs/{{blog._id}}">{{ blog.name }}</a>
+            <button ng-click="remove(blog)" class="btn">&times;</button>
+          </p>
+        </li>
+      </ul>
+      <dir-pagination-controls on-page-change="pageChanged(newPageNumber)" class="col-md-12"></dir-pagination-controls> -->
+    </div>
+  </div>
+  <p>Total number of blogs: {{blogsCount.count}}</p>
+</div>

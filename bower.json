@@ -1,0 +1,21 @@
+{
+  "name": "ghostAngularMeteor",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    ".meteor/local/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-marked": "~0.0.21"
+  },
+  "overrides": {
+    "angular": {
+      "main": []
+    }
+  }
+}
