@@ -9,7 +9,7 @@
   <div class="panel panel-default">
     <div class="panel-body">
       <div class="blogs-list" ng-repeat="blog in blogs">
-          <h4><a ui-serf="blogDetail">{{blog.title}}</a></h4>
+          <h4><a href="{{blog._id}}">{{blog.title}}</a></h4>
       </div>
       <!-- <div class="input-group pull-right col-md-3 col-sm-12">
         <input type="search" ng-model="search" placeholder="Search" class="form-control"/>

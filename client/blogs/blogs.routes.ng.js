@@ -9,7 +9,7 @@ angular.module('ghostAngularMeteorApp')
     controller: 'BlogsListCtrl'
   })
   .state('blog-detail', {
-    url: '/blogs/:blogId',
+    url: '/:blogId',
     templateUrl: 'client/blogs/blog-detail.view.ng.html',
     controller: 'BlogDetailCtrl'
   });

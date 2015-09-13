@@ -4,7 +4,9 @@ angular.module('ghostAngularMeteorApp')
 .controller('BlogDetailCtrl', function($scope, $stateParams, $meteor) {
   $scope.blog = $scope.$meteorObject(Blogs, $stateParams.blogId);
   $scope.$meteorSubscribe('blogs');
-  
+
+  $scope.blogId = $stateParams.blogId;
+
   $scope.save = function() {
     if($scope.form.$valid) {
       $scope.blog.save().then(
@@ -17,7 +19,7 @@ angular.module('ghostAngularMeteorApp')
       )
     }
   };
-        
+
   $scope.reset = function() {
     $scope.blog.reset();
   };
