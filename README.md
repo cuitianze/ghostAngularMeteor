@@ -12,4 +12,4 @@ meteor
 ```
 Enjoy your blog!
 
-![alt tag](https://github.com/cuitianze/stepbystep/blob/master/upload_progress/uploads/072ed3bbb7d16f3986897bfdbf0d853a)
+![demo](https://github.com/cuitianze/stepbystep/blob/master/upload_progress/uploads/photos/QQ20150912-1.png)
